@@ -16,8 +16,13 @@ body { background: #F8F4EC; color: #211D1B; }
 .btn-outline:hover { background:#211D1B; color:#F8F4EC; }
 .btn-gold { background:#A9863B; color:#fff; padding:14px 28px; border-radius:2px; font-size:14px; transition:background .25s ease; }
 .btn-gold:hover { background:#93712f; }
-.card { background:#fff; border:1px solid #E4DCC9; border-radius:4px; overflow:hidden; transition: box-shadow .25s ease, transform .25s ease; }
-.card:hover { box-shadow: 0 12px 28px rgba(33,29,27,0.08); transform: translateY(-2px); }
+.card { background:#fff; border:1px solid #E4DCC9; border-radius:4px; overflow:hidden; transition: box-shadow .3s ease, transform .3s ease; }
+.card:hover { box-shadow: 0 16px 32px rgba(33,29,27,0.1); transform: translateY(-4px); }
+.card-img-zoom { overflow: hidden; }
+.card-img-zoom > div { transition: transform .5s ease; }
+.card:hover .card-img-zoom > div { transform: scale(1.06); }
+.btn-primary, .btn-outline, .btn-gold { transition: all .25s ease; }
+.btn-primary:hover, .btn-gold:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(33,29,27,0.18); }
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 .fade-in { animation: fadeIn .5s ease both; }

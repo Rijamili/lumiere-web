@@ -6,10 +6,12 @@ export default function ServiceCard({ service }: { service: Service }) {
   const navigate = useNavigate();
   return (
     <div onClick={() => navigate(`/service/${service.id}`)} className="card cursor-pointer">
-      <div
-        className="h-[170px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${service.img})` }}
-      />
+      <div className="card-img-zoom">
+        <div
+          className="h-[170px] bg-cover bg-center"
+          style={{ backgroundImage: `url(${service.img})` }}
+        />
+      </div>
       <div className="p-4">
         <div className="text-xs text-gold mb-1">{service.category}</div>
         <div className="font-semibold text-[15px]">{service.name}</div>
