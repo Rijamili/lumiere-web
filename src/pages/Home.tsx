@@ -13,7 +13,7 @@ export default function Home() {
       <section className="relative min-h-[560px] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url(https://loremflickr.com/1600/900/beautysalon,luxury?lock=hero)" }}
+          style={{ backgroundImage: "url(https://images.unsplash.com/photo-1560750588-73207b1ef5b8?q=80&w=1600)" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/15 to-charcoal/55" />
         <div className="relative max-w-6xl mx-auto px-6 py-20 text-cream fade-in">
