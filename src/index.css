@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { background: #F8F4EC; color: #211D1B; }
+::selection { background: #C9A662; color: #211D1B; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #E4DCC9; border-radius: 4px; }
+
+.btn-primary { background:#211D1B; color:#F8F4EC; padding:14px 28px; border-radius:2px; font-size:14px; transition: background .25s ease; }
+.btn-primary:hover { background:#4B2E39; }
+.btn-outline { background:transparent; color:#211D1B; border:1px solid #211D1B; padding:13px 27px; border-radius:2px; font-size:14px; transition:all .25s ease; }
+.btn-outline:hover { background:#211D1B; color:#F8F4EC; }
+.btn-gold { background:#A9863B; color:#fff; padding:14px 28px; border-radius:2px; font-size:14px; transition:background .25s ease; }
+.btn-gold:hover { background:#93712f; }
+.card { background:#fff; border:1px solid #E4DCC9; border-radius:4px; overflow:hidden; transition: box-shadow .25s ease, transform .25s ease; }
+.card:hover { box-shadow: 0 12px 28px rgba(33,29,27,0.08); transform: translateY(-2px); }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.fade-in { animation: fadeIn .5s ease both; }
+@keyframes fadeIn { from { opacity:0; transform:translateY(8px);} to { opacity:1; transform:translateY(0);} }
